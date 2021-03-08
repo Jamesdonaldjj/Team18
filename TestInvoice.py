@@ -27,3 +27,7 @@ def test_CanCalucateTotalPurePrice(invoice, products):
 def test_totalQuant(products):
     invoice = Invoice()
     assert invoice.totalQuantity(products) == 15
+    
+def test_CanCalculateTotalItems(invoice, products):
+    invoice.totalItems(products)
+    assert invoice.totalItems(products) == 2
