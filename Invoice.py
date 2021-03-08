@@ -51,3 +51,10 @@ class Invoice:
             total_quant += int(v['qnt'])
         self.total_quan = total_quant
         return total_quant
+    
+    def totalItems(self, products):
+        total_items = 0
+        for k, v in products.items():
+            total_items += 1
+        self.total_items = total_items
+        return total_items
