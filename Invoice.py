@@ -49,5 +49,5 @@ class Invoice:
         total_quant = 0
         for k, v in products.items():
             total_quant += int(v['qnt'])
-        self.total_quan = total_quant
+        self.total_quant = total_quant
         return total_quant
